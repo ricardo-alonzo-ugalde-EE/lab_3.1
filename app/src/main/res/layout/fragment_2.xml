@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/design_default_color_on_secondary"
+    tools:context=".Fragment1">
+
+
+    <EditText
+        android:id="@+id/frag2_Address1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Address1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/frag2_Address2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Adress 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_Address1" />
+
+    <EditText
+        android:id="@+id/frag2_city"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:hint="city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_Address2" />
+
+    <EditText
+        android:id="@+id/frag2_State"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:hint="State"
+        app:layout_constraintStart_toEndOf="@+id/frag2_city"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_Address2" />
+
+    <EditText
+        android:id="@+id/frag2_zip"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="zip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frag2_State"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_Address2" />
+
+    <Button
+        android:id="@+id/frag2_nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_zip" />
+
+    <Button
+        android:id="@+id/frag2_backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="59dp"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag2_city" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
